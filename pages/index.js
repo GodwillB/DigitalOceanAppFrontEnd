@@ -4,9 +4,11 @@ export default function Home({posts}) {
       {/* loop over the posts and show them */}
     {posts && 
     posts.map((post) =>(
+      //getting data from API
       <div key={post.id} >
         <h2>{post.Title}</h2>
         <div>{post.users_permissions_user.username}</div>
+        <div>{post.users_permissions_user.email}</div>
       </div>
 
     ))}
