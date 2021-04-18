@@ -3,7 +3,6 @@ return(
 <div>{post.Title}</div>
 )
 }
-
 //tell next.js how many pages
 export async function getStaticPaths(){
     const res = await fetch('http://localhost:1337/posts');
